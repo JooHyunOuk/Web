@@ -1,0 +1,16 @@
+<template name="SearchList">
+    {{listName}}
+    {{Allcount}}
+    <table>
+        {{#each list}}
+            {{>SearchItem}}
+        {{/each}}
+    </table>
+    {{findName}}
+    {{findcount}}
+    <table>
+        {{#each findList}}
+            {{>SearchItem}}
+        {{/each}}
+    </table>
+</template>
