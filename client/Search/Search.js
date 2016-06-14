@@ -4,20 +4,19 @@ if (Meteor.isClient) {
             return "All List";
         },
         list: function () {
-                return Search.find({});
+            return Search.find({});
         },
         Allcount: function () {
             return Search.find({}).count();
         },
         findList: function () {
-            Session.get(type_name);
-            return Search.find({name: {$regex: type_name}}).fetch();
+         return Session.get('find');
         },
-        findName:function(){
+        findName: function () {
             return "Search List";
         },
         findcount: function () {
-            return S_Name.find({}).count();
+            return  Session.get('count');
         }
     });
     Template.SearchList.onCreated(function () {
