@@ -1,0 +1,35 @@
+<head>
+    <title>test</title>
+</head>
+
+<template name="layout" style="margin: 0">
+    <div class="top">
+        <ul class="top_ul">
+            <li class="top_li">{{>openMenu}}</li>
+            <li class="top_li"><a href="{{pathFor 'home'}}">HOME</a></li>
+            <li class="top_li"><a href="{{pathFor 'search'}}">SEARCH</a></li>
+            <li class="top_li"><a href="{{pathFor 'list'}}">LIST</a></li>
+        </ul>
+    </div>
+    <div id="sideMenu">
+        <ul class="side_ul">
+            {{>MusicList}}
+        </ul>
+    </div>
+
+    <div id="main">
+        {{>loginButtons}}
+        {{>yield}}
+        <div id="footer">
+            {{>player}}
+        </div>
+    </div>
+</template>
+
+
+<template name="openMenu">
+    <a href="javascript:;" class="openBtn">≡</a>
+</template>
+<template name="closeMenu">
+    <a href="javascript:;" class="closeBtn">X</a>
+</template>

@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.top {
+    top: 0;
+    position: fixed;
+    height: 68px;
+    width: 100%;
+    background-color: #333;
+}
+.top_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 30px;
+}
+.top_li {
+    float: left;
+}
+.top_li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.top_li a:hover {
+    background-color: #111;
+}
+
+#main {
+    transition: margin-left .5s;
+    margin-top: 80px;
+    margin-left: 250px;
+    padding-left: 20px;
+}
+#sideMenu {
+    float: left;
+    height: 100%;
+    width: 250px;
+    left: 0;
+    top: 68px;
+    z-index: 1;
+    overflow-x: hidden;
+    position: fixed;
+
+    background-color: lightgray;
+    transition: 0.5s;
+}
+#sideMenu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+#sideMenu a:hover {
+    color: white;
+}
+.side_ul {
+    padding: 20px 0 0 30px;
+    list-style-type: none;
+}
+.side_li {
+    width: 220px;
+    text-decoration: none;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px !important;
+}
+
+.search_bar {
+    width: 250px;
+    height: 40px;
+    border-radius: 5%;
+    font-size: 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.search_bar:focus {
+    width: 80%;
+}
+.search {
+    height: 40px;
+    border-radius: 5%;
+    font-size: 20px;
+}
+.search_item {
+    vertical-align: middle;
+    height: 30px;
+    width: 60%;
+    list-style-type: none;
+    font-size: 20px;
+    display: block;
+    border: 1px solid lightgray;
+}
+.search_item:nth-child(2n) {
+    border-radius: 1%;
+    background-color: lightgray;
+}
+.search_item a {
+    text-decoration: none;
+}
+.search_add {
+    float: right;
+    height: 30px;
+}
+
+.home {
+    height: 680px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.playing {
+    display: table;
+}
+.image {
+    float: left;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+}
+.playing_info {
+    float: left;
+    height: 400px;
+    width: 400px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: gray;
+}
+.lyric {
+    float: right;
+    display: table-cell;
+    height: 500px;
+    width: 400px;
+    background-color: aqua;
+}
+
+#footer {
+    margin-left: 250px;
+    transition: margin-left .5s;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: lightgray;
+}
+
+#volumeUp {
+
+}
+#volumeDonw {
+
+}
+
+
+
+#progress {
+    position: relative;
+    width: 70%;
+    height: 5px;
+    background-color: grey;
+    border-radius: 5%;
+}
+#progressBar {
+    position: absolute;
+    width: 1%;
+    height: 100%;
+    background-color: red;
+}
